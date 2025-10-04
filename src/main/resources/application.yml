@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: java-bdd-cucumber
+server:
+  port: 8081
+
+logging:
+  level:
+    root: INFO
+
+---
+spring:
+  config:
+    activate:
+      on-profile: test
+logging:
+  level:
+    com.example.demo: DEBUG
